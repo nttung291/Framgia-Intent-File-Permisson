@@ -1,0 +1,1 @@
+# Framgia-Intent-File-Permisson
