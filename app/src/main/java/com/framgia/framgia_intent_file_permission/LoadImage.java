@@ -25,7 +25,9 @@ public class LoadImage extends AsyncTask<Void,Void,Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-        publishProgress();
+        if(!isCancelled()){
+            publishProgress();
+        }
         return null;
     }
 
