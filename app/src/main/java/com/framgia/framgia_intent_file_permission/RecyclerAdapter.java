@@ -51,8 +51,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             imageView = itemView.findViewById(R.id.image_view);
         }
         public void bindData(File file){
-
-            Glide.with(context).load(file).into(imageView);
+            new LoadImage(context,file,imageView).execute();
         }
 
     }
